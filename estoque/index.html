@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque de Produtos</title>
+    <script src="./estoque.js" defer></script>
+</head>
+<body>
+    <h1>Adicionar Produtos ao Estoque</h1>
+    
+    <input type="text" id="nomeProduto" placeholder="Nome do Produto">
+    <input type="number" id="precoProduto" placeholder="Preço do Produto" step="0.01">
+    <input type="number" id="quantidadeProduto" placeholder="Quantidade em Estoque">
+    
+    <button onclick="adicionarProduto()">Adicionar Produto</button>
+    
+    <h2>Produtos Cadastrados:</h2>
+    <div id="produtosListados"></div>
+
+    <button onclick="calcularEstoque()">Calcular Valor Total do Estoque</button>
+    <div id="resultadoEstoque"></div>
+
+    <button onclick="resetarEstoque()">Resetar Estoque</button>
+</body>
+</html>

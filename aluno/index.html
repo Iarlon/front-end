@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aluno</title>
+    <script src="./aluno.js"></script>
+</head>
+<body>
+    <input type="text" id="nomeInput" placeholder="Escreva seu nome">
+    <p>Nome do Aluno: <span id="nomeAluno"></span></p>
+
+    <p>Escolha suas 3 notas: </p>
+    <select id="selectNota">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <button onclick="AdicionarInf()">Adicionar</button>
+
+    <p>Sua Notas: <span id="notasTodas"></span></p>
+    <p>Média: <span id="mediaNota"></span></p>
+    
+    <button onclick="resetar()">Reset notas</button>
+</body>
+</html>
